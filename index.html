@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Currency Converter</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="converter">
+      <div class="input-group">
+        <input type="number" id="amount" value="1" min="0" />
+      </div>
+
+      <div class="currency-row">
+        <select id="fromCurrency"></select>
+        <button id="swap">⇄</button>
+        <select id="toCurrency"></select>
+      </div>
+
+      <div class="result">
+        <h2 id="convertedAmount">0.00</h2>
+        <p id="rateInfo"></p>
+        <small id="lastUpdate"></small>
+         <br><br>
+        <small>Created by <i>Lingkan </i>©</small>
+      </div>
+    </div>
+
+    <p class="error" id="errorMsg"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
